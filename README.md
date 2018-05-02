@@ -11,6 +11,7 @@
         - quickplay 快速播放一天轨迹
     - point 开关锁点(与时间轴联动)
     - 各种分析图表
+        - 爬取微博，展示一天top10关键字
 - population 人口
     - density 密度
         - 三维柱状图
