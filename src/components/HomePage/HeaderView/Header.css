@@ -1,0 +1,14 @@
+.backgroundView {
+    width: 100%;
+    height: 60px;
+    background: white;
+    font-size: 18px;
+    line-height: 60px;
+    /*框的阴影，参数为：水平位置 垂直位置 模糊范围 颜色*/
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    background: url('../../../assets/home/navigationlogo.png') no-repeat;
+    background-size: 512px 41px;
+    float: left;
+    vertical-align: middle;
+    background-position: left;
+}
