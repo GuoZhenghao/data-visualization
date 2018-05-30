@@ -1,8 +1,8 @@
 # data-visualization
 # 项目介绍
-数据可视化
+时空大数据可视化
 
-功能:
+功能：
 - bts 社区
     - 传感器数据
     - 爬取的热力及社区人口数据
@@ -27,8 +27,29 @@
         - 平面网格
         - 热力
         - 散点
-     - OD点(暂时不引入mapd，不实现)
+    - OD飞线(暂时不引入mapd，不实现)
 
+部分截图：
+- 首页
+![首页](/res/home.png =200x100)
+- 社区-环境传感器
+![社区环境传感器](/res/bts_env.png)
+- 社区-人口
+![社区人口](/res/bts_pop.png)
+- 全国环境
+![全国环境](/res/env.png)
+- 北京交通
+![北京交通](/res/traffic.png)
+- 单车-实时
+![单车实时位置点](/res/bike_real.png)
+![某车位置1](/res/bike_real_1.png)
+![某车位置2](/res/bike_real_2.png)
+- 单车-昨日开关锁点
+![单车昨日开关锁](/res/bike_his.png)
+- 医疗
+![医疗](/res/medical.png)
+- 北京人口
+![北京人口](/res/pop.png)
 # 项目结构
 前端使用react进行编写，脚手架选择dva。
 
