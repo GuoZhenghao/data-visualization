@@ -2,8 +2,8 @@ import request from '../utils/request';
 import baseConfig from './config';
 
 // 传感器位置及指标数据
-export async function btsEnvMapService() {
-    return request(baseConfig.guozhenghaoServiveDomain + '/datavisualization/v1/environment/bts/getmonitor?type=3&name=PM2.5', {
+export async function btsEnvMapService(name) {
+    return request(baseConfig.guozhenghaoServiveDomain + '/datavisualization/v1/environment/bts/getmonitor?type=3&name=' + name, {
         method: 'get',
     });
 }

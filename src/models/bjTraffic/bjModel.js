@@ -29,7 +29,6 @@ export default {
                             "yAxisName": "拥堵指数"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 },
                 {
                     "id": "speed",
@@ -47,7 +46,6 @@ export default {
                             "yAxisName": "km/h"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 }
             ]
         },
@@ -63,7 +61,6 @@ export default {
                     "subtitle": null,
                     "theme": "mobike",
                     "Style": "barBaseStyle",
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 }
             ]
         },
@@ -152,10 +149,6 @@ export default {
     },
 
     reducers: {
-        changeSelectMenuReducer(state, action) {
-            state.selectMenuState = action.payload;
-            return {...state, ...action.payload};
-        },
         /**
          *初始化
          */
@@ -177,7 +170,6 @@ export default {
         getBaseMapLayerDataReducer(state, action) {
             if (state.medicalBaseMapClass != null) {
                 state.baseMapLayerData = action.payload;
-                // alert(JSON.stringify(state.baseMapLayerData));
                 state.medicalBaseMapClass.setMapLayerData(state.baseMapLayerData);
             }
             return {

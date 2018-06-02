@@ -16,8 +16,6 @@ class BTSLeftMenuRouter extends React.Component {
     }
 
     componentDidMount() {
-        window.addEventListener('hashchange', function (ev) {
-        });
     }
 
     clickListHandle = (elem) => {
@@ -62,7 +60,6 @@ class BTSLeftMenuRouter extends React.Component {
                 <div className={styles.titleView}>{elem.title}</div>
             </div>;
         })
-
         return listView;
     }
 

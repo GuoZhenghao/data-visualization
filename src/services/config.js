@@ -1,6 +1,6 @@
 export default {
 
     // guozhenghao
-    guozhenghaoServiveDomain: "http://123.123.123.123：123",
+    guozhenghaoServiveDomain: "http://223.223.200.50:9009",
 
 };

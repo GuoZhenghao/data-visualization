@@ -9,7 +9,6 @@ class MobikeRealBottomView extends React.Component {
     }
 
     componentDidMount() {
-        let dispatch = this.props.dispatch;
         this.props.dispatch({
             type: 'mobikeModel/getMobikeRealBottomChartsData'
         })
@@ -32,14 +31,12 @@ class MobikeRealBottomView extends React.Component {
             let xwidth = parseInt(NewWidth[j]) / scalesAnd * 100 + "%";
             xwidthAnd.push(xwidth);
         }
-// console.log(content.Charts)
         let listView = content.Charts.map(function (content, elem) {
             let chartTitle = elem;
             let style = {
                 width: xwidthAnd[elem],
                 height: "100%",
                 float: "left",
-                // cursor:"pointer"
             }
 
             return (

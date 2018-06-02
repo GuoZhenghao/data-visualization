@@ -1,5 +1,5 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
-import GroupScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/GroupScatterLayer';
+import GroupScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/EnvScatterLayer';
 
 class EnvMapClass {
     constructor(mapboxgl, map, dispatch) {

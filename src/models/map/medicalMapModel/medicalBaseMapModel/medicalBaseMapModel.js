@@ -39,7 +39,6 @@ export default {
                                      }, {call, put, select}) {
             let thisModel = yield select(state => state.medicalBaseMapModel);
             let result = yield call(medicalService.medicalBaseMapService, thisModel.param);
-            // alert(JSON.stringify(result))
             if (result.data.result == true) {
                 // alert(JSON.stringify(result))
                 yield put({type: "getBaseMapLayerDataReducer", payload: result})

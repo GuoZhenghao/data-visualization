@@ -1,8 +1,6 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
-import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/SizeScatterLayer';
+import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/BTSScatterLayer';
 import BTSHeatLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/BTSHeatLayer';
-
-import * as d3 from 'd3';
 
 class BTSEnvMapClass {
     constructor(mapboxgl, map, dispatch) {

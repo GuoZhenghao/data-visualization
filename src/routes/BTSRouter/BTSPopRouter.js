@@ -33,7 +33,8 @@ class BTSPopRouter extends React.Component {
 
 function mapStateToProps(state) {
     return {
-        model: state.mcBaseModel,
+        // model: state.mcBaseModel,
+        model: state.btsModel
     }
 }
 

@@ -30,7 +30,6 @@ export default {
                             "yAxisName": "数值"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 }
             ]
         },
@@ -52,7 +51,6 @@ export default {
                             "type": "pie"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 },
                 {
                     "id": "right2",
@@ -68,7 +66,6 @@ export default {
                             "type": "pie"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 },
                 {
                     "id": "right3",
@@ -87,7 +84,6 @@ export default {
                             "yAxisName": "百分比"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 }
             ]
         },
@@ -151,7 +147,6 @@ export default {
                 }
             }
         },
-
     },
 
     reducers: {

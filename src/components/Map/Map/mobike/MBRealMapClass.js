@@ -1,5 +1,5 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
-import GroupScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/GroupScatterLayer';
+import GroupScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/EnvScatterLayer';
 import * as d3 from 'd3';
 
 class MBRealMapClass {

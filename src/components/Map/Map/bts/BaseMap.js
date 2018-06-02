@@ -1,11 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {connect} from 'dva'
 import styles from './BaseMap.css';
 import mapboxgl from 'mapbox-gl';
 import mapStyle from '../../../../utils/mapStyle';
 import {dasTypeFuction} from '../BaseMapAction';
-
 
 /**
  * 类说明

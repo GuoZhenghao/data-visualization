@@ -18,7 +18,6 @@ class HeatLayer {
             colorArr.push(i / (colorTable.length - 1));
             colorArr.push(colorTable[i]);
         }
-        // console.log(colorArr,'colorArr')
         let obj = {
             "id": id,
             "type": "heatmap",

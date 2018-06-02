@@ -17,7 +17,6 @@ class MBHisMapClass {
 
     initMap() {
         this.sizeScatterLayer = new SizeScatterLayer(this.map);
-        this.btsHeatLayer = new BTSHeatLayer(this.map);
         this.map.setStyle(blackMap.chinablack);
 
         this.realTimeLayer = new RealTimeLayer(this.mapboxgl, this.map, this.dispatch);
@@ -25,10 +24,6 @@ class MBHisMapClass {
     }
 
     setMapLayerData(data, type) {
-
-        // alert(JSON.stringify(data))
-        // console.log("fdfdfdfdfd",data);
-
         switch (type) {
             case "env":
                 this.sizeScatterLayer.removeMapLay();
@@ -47,7 +42,6 @@ class MBHisMapClass {
 
                 break;
             case "pop":
-                // alert('LEIQIQIQ')
                 this.realTimeLayer.initSocket();
                 this.realTimeLayer.createMarkerData();
                 this.map.flyTo({
@@ -68,7 +62,6 @@ class MBHisMapClass {
     }
 
     closeSecket() {
-        // alert("kkk")
         this.realTimeLayer.closeSocket();
     }
 

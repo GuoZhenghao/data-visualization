@@ -32,7 +32,32 @@ class BTSEnvSelectView extends React.Component {
             },
             {
                 "name": "O3"
+            },
+            {
+                "name": "VOC"
+            },
+            {
+                "name": "CO"
+            },
+            {
+                "name": "CO2"
+            },
+            {
+                "name": "SO2"
+            },
+            {
+                "name": "车流量"
+            },
+            {
+                "name": "紫外线指数"
+            },
+            {
+                "name": "风速"
+            },
+            {
+                "name": "噪声"
             }
+
         ]
 
         let listView = array.map(function (elem, index) {

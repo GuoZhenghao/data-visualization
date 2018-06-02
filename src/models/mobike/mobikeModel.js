@@ -78,15 +78,15 @@ export default {
                     "series": [
                         {
                             "type": "line",
-                            "name": "",
+                            "name": "开锁",
                             "xAxisName": "时间",
-                            "yAxisName": ""
+                            "yAxisName": "数量"
                         },
                         {
                             "type": "line",
-                            "name": "",
+                            "name": "关锁",
                             "xAxisName": "时间",
-                            "yAxisName": ""
+                            "yAxisName": "数量"
                         }
                     ]
                 }
@@ -184,7 +184,7 @@ export default {
             }
         },
 
-        * getMobikeBottomChartsData({payload}, {call, put, select}) {  // eslint-disable-line
+        * getMobikeBottomChartsData({payload}, {call, put, select}) {
             let allChartType = [];
             let thisModel = yield select(state => state.mobikeModel);
             let chartContent = thisModel.bottomChartContent;
@@ -199,7 +199,7 @@ export default {
             }
         },
 
-        * getMobikeRightChartsData({payload}, {call, put, select}) {  // eslint-disable-line
+        * getMobikeRightChartsData({payload}, {call, put, select}) {
             let allChartType = [];
             let thisModel = yield select(state => state.mobikeModel);
             let chartContent = thisModel.rightChartContent;
@@ -218,11 +218,7 @@ export default {
             let allChartType = [];
             let thisModel = yield select(state => state.mobikeModel);
             let chartContent = thisModel.bottomRealChartContent;
-            // console.log(chartContent,'chartContent')
-
-
             let arrayUrl = [allService.mobikeBottom1Service, allService.mobikeBottom2Service, allService.mobikeBottom3Service]
-
             for (let j = 0; j < chartContent.Charts.length; j++) {
                 let result = yield call(arrayUrl[j])
                 if (!result.err) {
@@ -232,7 +228,7 @@ export default {
                 }
             }
         },
-        * getMobikeRealRightData({payload}, {call, put, select}) {  // eslint-disable-line
+        * getMobikeRealRightData({payload}, {call, put, select}) {
             let allChartType = [];
             let thisModel = yield select(state => state.mobikeModel);
             let chartContent = thisModel.rightChartContent;

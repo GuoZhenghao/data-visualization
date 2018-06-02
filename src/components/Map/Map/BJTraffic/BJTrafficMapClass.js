@@ -1,5 +1,5 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
-import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/SizeScatterLayer';
+import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/BTSScatterLayer';
 import BTSHeatLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/BTSHeatLayer';
 
 class BJTrafficMapClass {
@@ -14,7 +14,7 @@ class BJTrafficMapClass {
 
     initMap() {
         this.sizeScatterLayer = new SizeScatterLayer(this.map);
-        this.btsHeatLayer = new BTSHeatLayer(this.map);
+        // this.btsHeatLayer = new BTSHeatLayer(this.map);
 
     }
 
@@ -35,7 +35,6 @@ class BJTrafficMapClass {
     }
 
     handleMapMarkerClick(e) {
-        console.log("dsfjhgsjdgfjhs", e);
         let currentThis = this;
         currentThis.dispatch({type: 'bjModel/getSelectTypeReducer', payload: e.features[0].properties.content})
         currentThis.dispatch({type: 'bjModel/getBottomChartsData'})

@@ -19,7 +19,6 @@ export default {
 
     reducers: {
         changeDasTypeReducer(state, action) {
-            // alert(action.payload)
             state.dasTypeState = action.payload;
             return {...state, ...action.payload};
         },
