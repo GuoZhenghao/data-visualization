@@ -26,5 +26,10 @@ export const dasType = {
     /**
      *北京人口
      */
-    BJ_POPULATION: "bjPopulation"
+    BJ_POPULATION: "bjPopulation",
+    /**
+     *测试
+     */
+    TEST1: "test1",
+    TEST2: "test2"
 }

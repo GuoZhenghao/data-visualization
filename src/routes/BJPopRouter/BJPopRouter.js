@@ -11,9 +11,6 @@ class BJPopRouter extends React.Component {
 
     componentDidMount() {
 
-        // this.props.dispatch({type: 'bjModel/getBJMapLayerData'})
-        // this.props.dispatch({type: 'bjModel/changeSelectMenuReducer', payload: dasType.BJ_TRAFFIC})
-        // this.props.dispatch({type: 'baseMapModel/changeDasTypeReducer', payload: dasType.BJ_TRAFFIC})
     }
 
     componentWillUnmount() {

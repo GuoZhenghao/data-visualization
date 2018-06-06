@@ -31,7 +31,6 @@ let myChart = null;
 export let arr = [];
 
 export function* initChartView(divId, result, obj) {
-    console.log("TTTTTTTTTTTTTccc", result, divId, obj);
     if (!result.data.result) {
         console.log(result.data.error, obj)
         return;

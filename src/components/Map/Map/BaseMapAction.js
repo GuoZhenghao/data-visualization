@@ -8,7 +8,7 @@ import EnvMapClass from './EnvMap/EnvMapClass';
 // baitasi
 import BTSEnvMapClass from './bts/BTSEnvMapClass';
 import MBHisMapClass from './mobike/MBHisMapClass';
-import MBRealMapClass from './mobike/MBRealMapClass';
+import TestMapClass from './Test/TestMapClass';
 
 import BJTrafficMapClass from './BJTraffic/BJTrafficMapClass';
 
@@ -49,6 +49,12 @@ export function dasTypeFuction(props, map, mapboxgl) {
         // 北京人口
         case dasType.BJ_POPULATION:
             initBJTrafficClass(props, map, mapboxgl);
+            break;
+        case dasType.TEST1:
+            initTestClass(props, map, mapboxgl);
+            break;
+        case dasType.TEST2:
+            initTestClass(props, map, mapboxgl);
             break;
         default:
 
@@ -131,6 +137,15 @@ function initBJTrafficClass(props, map, mapboxgl) {
     let envMapClass = new BJTrafficMapClass(mapboxgl, map, props.dispatch);
     props.dispatch({
         type: 'bjModel/initMedicalBaseMapClass',
+        payload: envMapClass
+    })
+}
+
+function initTestClass(props, map, mapboxgl) {
+
+    let envMapClass = new TestMapClass(mapboxgl, map, props.dispatch);
+    props.dispatch({
+        type: 'testModel/initMedicalBaseMapClass',
         payload: envMapClass
     })
 }

@@ -74,7 +74,7 @@ export default {
                     "Title": null,
                     "subtitle": null,
                     "theme": "medicalLine",
-                    "Style": "lineBaseStyle",
+                    "Style": "lineAreaStyle",
                     "series": [
                         {
                             "type": "line",

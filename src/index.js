@@ -36,6 +36,7 @@ app.model(require('./models/bts/btsModel').default)
 app.model(require('./models/mobike/mobikeModel').default)
 
 app.model(require('./models/bjTraffic/bjModel').default)
+app.model(require('./models/test/testModel').default)
 
 
 // 4. Router

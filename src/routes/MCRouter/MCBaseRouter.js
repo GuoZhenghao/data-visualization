@@ -19,12 +19,10 @@ class MCBaseRouter extends React.Component {
 
         this.props.dispatch({type: 'mcLeftMenuModel/changeSelectMenuReducer', payload: dasType.MEDICAL_BASE})
         this.props.dispatch({type: 'baseMapModel/changeDasTypeReducer', payload: dasType.MEDICAL_BASE})
-        this.props.dispatch({type: 'mapToolModel/changeDasTypeReducer', payload: dasType.MEDICAL_BASE})
         this.props.dispatch({type: 'medicalBaseMapModel/getMedicalBaseMapLayerData', payload: "xxxx"})
     }
 
     componentWillUnmount() {
-        console.log("mcBaseModel", this.props);
         if (this.props.history.action == "POP") {
         }
 

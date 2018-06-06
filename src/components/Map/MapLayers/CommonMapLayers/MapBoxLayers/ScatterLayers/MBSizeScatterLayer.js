@@ -47,7 +47,7 @@ class MBSizeScatterLayer {
             "features": []
         }
         if (data[0].content.length != data[1].content.length) {
-            message.error('数据初始化错误，请及时检查或者联系客服！')
+            message.error('数据初始化错误')
             return obj;
         }
         let endarr = [];

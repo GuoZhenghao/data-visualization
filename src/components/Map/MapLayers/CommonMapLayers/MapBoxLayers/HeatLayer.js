@@ -45,17 +45,7 @@ class HeatLayer {
                         [17, 0]
                     ]
                 },
-                // "heatmap-color": [
-                //   "interpolate",
-                //   ["linear"],
-                //   ["heatmap-density"],
-                //   0, "red",
-                //   0.2, "blue",
-                //   0.4, "yellow",
-                //   0.6, "green",
-                //   0.8, "black",
-                //   1, "green"
-                // ],
+
                 "heatmap-color": colorArr,
                 "heatmap-radius": {
                     'type': 'identity',
@@ -87,7 +77,7 @@ class HeatLayer {
             "features": []
         }
         if (data[0].content.length != data[1].content.length) {
-            message.error('数据初始化错误，请及时检查或者联系客服！')
+            message.error('数据初始化错误')
             return obj;
         }
         let endarr = [
@@ -113,8 +103,6 @@ class HeatLayer {
             }
         }
 
-        console.log("ggggggggg", values);
-
         for (let i in data[0].content) {
             endarr[0].push([lons[i], lats[i]])
         }
@@ -137,9 +125,7 @@ class HeatLayer {
     }
 
     addMapLay(data, colors) {
-        // console.log("colorTable:",colors);
         if (!this.map.getLayer('heatMap')) {
-            // console.log(data,'wangdata')
             this.map.addLayer(this.MapLayData('heatMap', data, colors));
         }
     }

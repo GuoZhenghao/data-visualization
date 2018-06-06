@@ -21,6 +21,10 @@ import MCLeftMenuRouter from './routes/MCRouter/MCLeftMenuRouter';
 //北京人口
 import BJPopRouter from './routes/BJPopRouter/BJPopRouter';
 
+import TestRouter2 from "./routes/TEST/TestRouter2";
+import TestRouter1 from "./routes/TEST/TestRouter1";
+import TestLeftMenuRouter from "./routes/TEST/TestLeftMenuRouter";
+
 function RouterConfig({history}) {
     console.log("history", history);
     return (
@@ -46,6 +50,11 @@ function RouterConfig({history}) {
                     <Route path="/medical/medicalindexdata" component={MCIndexRouter}></Route>
                     {/* 人口 */}
                     <Route path="/bjpop" component={BJPopRouter}></Route>
+                    {/*Test*/}
+                    <Route path="/test" component={TestLeftMenuRouter}></Route>
+                    <Route path="/test/test1" component={TestRouter1}></Route>
+                    <Route path="/test/test2" component={TestRouter2}></Route>
+
                 </div>
             </Switch>
         </Router>

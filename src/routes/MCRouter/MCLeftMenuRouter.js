@@ -13,11 +13,8 @@ class MCLeftMenuRouter extends React.Component {
     }
 
     componentDidMount() {
-        // alert(browserHistory.getCurrentLocation().pathname)
-        // console.log("hashHistory",this.props);
-        window.addEventListener('hashchange', function (ev) {
-            // console.log("hashchange", ev);
-        });
+        // window.addEventListener('hashchange', function (ev) {
+        // });
     }
 
     clickListHandle = (elem) => {
@@ -25,11 +22,9 @@ class MCLeftMenuRouter extends React.Component {
         this.props.dispatch({type: 'mcLeftMenuModel/changeSelectMenuReducer', payload: elem.type})
         switch (elem.type) {
             case dasType.MEDICAL_BASE:
-                // this.props.dispatch(routerRedux.push('/medical/medicalbasedata'));
                 this.props.history.push('/medical/medicalbasedata');
                 break;
             case dasType.MEDICAL_INDEX:
-                // this.props.dispatch(routerRedux.push('/medical/medicalindexdata'));
                 this.props.history.push('/medical/medicalindexdata');
                 break;
             default:

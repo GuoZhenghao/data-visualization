@@ -13,7 +13,7 @@ class BTSEnvBottomView extends React.Component {
     }
 
     componentDidMount() {
-        let dispatch = this.props.dispatch;
+        // let dispatch = this.props.dispatch;
         this.props.dispatch({
             type: 'btsModel/getEnvChartsData'
         })

@@ -34,18 +34,16 @@ class BJBottomView extends React.Component {
             let xwidth = parseInt(NewWidth[j]) / scalesAnd * 100 + "%";
             xwidthAnd.push(xwidth);
         }
-// console.log(content.Charts)
         let listView = content.Charts.map(function (content, elem) {
             let chartTitle = elem;
             let style = {
                 width: xwidthAnd[elem],
                 height: "100%",
                 float: "left",
-                // cursor:"pointer"
             }
 
             return (
-                <div key={"lqq" + elem} style={style}>
+                <div key={"gzh" + elem} style={style}>
                     <div id={content.id} className={styles.chartView}></div>
                 </div>
             )

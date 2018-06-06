@@ -1,8 +1,8 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
-import GroupScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/EnvScatterLayer';
-import * as d3 from 'd3';
+import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/BTSScatterLayer';
+import BTSHeatLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/BTSHeatLayer';
 
-class MBRealMapClass {
+class TestMapClass {
     constructor(mapboxgl, map, dispatch) {
         this.mapboxgl = mapboxgl;
         this.map = map;
@@ -11,19 +11,18 @@ class MBRealMapClass {
     }
 
     initMap() {
-        this.groupScatterLayer = new GroupScatterLayer(this.map);
+        this.sizeScatterLayer = new SizeScatterLayer(this.map);
+        this.btsHeatLayer = new BTSHeatLayer(this.map);
     }
 
     setMapLayerData(data, type) {
-
         switch (type) {
             case "env":
                 // this.sizeScatterLayer.removeMapLay();
                 // this.sizeScatterLayer.addMapLay(data, "red", 10);
-
                 this.map.flyTo({
-                    center: cameraInfomation.CENTER,
-                    zoom: 12,
+                    center: [116.3561, 39.9239],
+                    zoom: 15.14,
                     bearing: cameraInfomation.BEARING,
                     curve: cameraInfomation.CURVE,
                     pitch: cameraInfomation.PITCH,
@@ -37,8 +36,8 @@ class MBRealMapClass {
                 // this.btsHeatLayer.removeMapLay();
                 // this.btsHeatLayer.addMapLay(data, colorTable);
                 this.map.flyTo({
-                    center: cameraInfomation.CENTER,
-                    zoom: 12,
+                    center: [116.3561, 39.9239],
+                    zoom: 15.14,
                     bearing: cameraInfomation.BEARING,
                     curve: cameraInfomation.CURVE,
                     pitch: cameraInfomation.PITCH,
@@ -48,11 +47,8 @@ class MBRealMapClass {
                 });
                 break;
             default:
-
         }
-
     }
-
 }
 
-export default MBRealMapClass;
+export default TestMapClass;

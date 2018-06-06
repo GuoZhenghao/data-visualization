@@ -104,7 +104,7 @@ class BTSHeatLayer {
             let features = {
                 'type': 'Feature',
                 "properties": {
-                    'radius': values[i] * 2.44,
+                    'radius': values[i] * 2.5,
                 },
                 'geometry': {
                     'type': 'MultiPoint',

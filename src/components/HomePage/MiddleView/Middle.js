@@ -60,6 +60,10 @@ class Middle extends React.Component {
                 console.log("this.props", this.props);
                 this.props.dispatch(routerRedux.push('/bjpop'));
                 break;
+            case dasType.TEST1:
+                console.log("this.props", this.props);
+                this.props.dispatch(routerRedux.push('/test/test1'));
+                break;
             default:
         }
     }

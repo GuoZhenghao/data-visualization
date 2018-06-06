@@ -40,7 +40,6 @@ export default {
                             "yAxisName": "指标"
                         }
                     ],
-                    "dataSource": "/dataeye/v1/data/filter/fortmatchart?"
                 }
 
             ]

@@ -25,7 +25,6 @@ class BJRightView extends React.Component {
         })
     }
 
-
     listView = () => {
         console.log(this.props)
         let content = this.props.model.rightChartContent;

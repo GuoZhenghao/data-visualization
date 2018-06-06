@@ -1,5 +1,4 @@
 import {initChartView, callBack} from "../chartView/echartsAll";
-
 import * as envService from "../../services/envService";
 
 export default {
@@ -7,6 +6,7 @@ export default {
     namespace: 'envModel',
 
     state: {
+        // 封装好的图标组件格式
         bottomChartContent: {
             Scales: "1",
             Charts: [
@@ -47,7 +47,7 @@ export default {
                 }, {call, put}) {
             yield put({type: 'save'});
         },
-
+        // 获取数据
         * getChartsData({
                             payload
                         }, {call, put, select}) {
@@ -79,7 +79,7 @@ export default {
                 ...action
             }
         },
-
+        // 点击事件修改参数值
         getValuesReducer(state, action) {
             state.rightContent = action.payload;
             return {

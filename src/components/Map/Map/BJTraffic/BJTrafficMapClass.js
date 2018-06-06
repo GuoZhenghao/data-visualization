@@ -1,6 +1,5 @@
 import {cameraFlyType, cameraInfomation, pitchConstant} from '../../../../utils/medicalUtils/medicalBaseUtils';
 import SizeScatterLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/ScatterLayers/BTSScatterLayer';
-import BTSHeatLayer from '../../MapLayers/CommonMapLayers/MapBoxLayers/BTSHeatLayer';
 
 class BJTrafficMapClass {
     constructor(mapboxgl, map, dispatch) {
@@ -14,8 +13,6 @@ class BJTrafficMapClass {
 
     initMap() {
         this.sizeScatterLayer = new SizeScatterLayer(this.map);
-        // this.btsHeatLayer = new BTSHeatLayer(this.map);
-
     }
 
     setMapLayerData(data) {

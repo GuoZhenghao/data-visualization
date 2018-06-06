@@ -5,7 +5,7 @@ class GroupScatterLayer {
         this.map = map;
         this.dispatch = dispatch;
     }
-
+    // 封装的散点类结构填充
     MapLayData(id, data, color, radius) {
         if (!color) {
             color = "red";
@@ -47,7 +47,7 @@ class GroupScatterLayer {
             "features": []
         }
         if (data[0].content.length != data[1].content.length) {
-            message.error('数据初始化错误，请及时检查或者联系客服！')
+            message.error('数据初始化错误')
             return obj;
         }
         let endarr = [
@@ -61,7 +61,6 @@ class GroupScatterLayer {
         let valContent = [
             []
         ];
-
 
         //获取坐标值 lon lat
         let lons = [];
@@ -82,6 +81,7 @@ class GroupScatterLayer {
                 values = data[i].content;
             }
         }
+        // 根据AQI值设置颜色
         let val = 0;
         for (let i in data[0].content) {
 
@@ -110,7 +110,6 @@ class GroupScatterLayer {
             }
         }
         for (let i in endarr[0]) {
-
             let pointArray = {
                 'type': 'Feature',
                 'geometry': {

@@ -48,5 +48,11 @@ export const listJSON = {
             type: dasType.BJ_POPULATION,
             image: popImage
         }
+        // {
+        //     name: "测试",
+        //     desc: "新建一个进行测试",
+        //     type: dasType.TEST1,
+        //     image: popImage
+        // }
     ]
 }
