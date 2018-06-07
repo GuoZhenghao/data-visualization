@@ -55,7 +55,16 @@
 
 地图使用mapbox。
 
-后端使用java、go进行服务编写，消息中间件使用kafka，数据库使用mysql、mongodb、mapd。
+后端使用go语言进行服务编写，框架选用Beego，消息中间件使用kafka，数据库使用mysql、mongodb、mapd。
+
+爬虫选用python进行编写，框架选用scrapy。数据模拟使用java进行编写。
 
 - data_visualization
+    - public 封装的echart图表
     - src
+        - assets 每个大屏的素材，如图标等
+        - components 所有组件，如热力图、折线图表等
+        - models 数据处理
+        - routes 每个路由对应的界面
+        - services models层中调用的所有服务
+        - utils 工具类
